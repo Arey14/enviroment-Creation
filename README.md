@@ -42,28 +42,28 @@ Para garantizar que la instalación se complete sin intervención del usuario en
 
 ## Guía Detallada de los Módulos
 
-### [01_base_system.sh](file:///home/augusto/Desktop/enviroment-Creation/modules/01_base_system.sh)
+### [01_base_system.sh](modules/01_base_system.sh)
 Instala dependencias esenciales del sistema de compilación (`build-essential`), bibliotecas de desarrollo criptográfico y geoespacial, el gestor de paquetes de Python ultrarrápido `uv`, y herramientas cotidianas (`tmux`, `git`, `htop`, `ffmpeg`).
 
-### [02_sysstat_swap.sh](file:///home/augusto/Desktop/enviroment-Creation/modules/02_sysstat_swap.sh)
+### [02_sysstat_swap.sh](modules/02_sysstat_swap.sh)
 Configura el demonio de recolección de estadísticas del sistema `sysstat` en intervalos de 5 minutos para monitorizar el uso de recursos históricos.
 
-### [03_python_jupyter.sh](file:///home/augusto/Desktop/enviroment-Creation/modules/03_python_jupyter.sh)
+### [03_python_jupyter.sh](modules/03_python_jupyter.sh)
 Crea un entorno virtual (`.venv`) y utiliza `uv` para instalar suites de ciencia de datos, machine learning (TensorFlow, Keras, PyTorch/LightGBM, pandas) y utilidades de backend. Adicionalmente, instala e implementa JupyterLab como un servicio de sistema (`systemd --user`).
 
-### [04_r_rstudio.sh](file:///home/augusto/Desktop/enviroment-Creation/modules/04_r_rstudio.sh)
+### [04_r_rstudio.sh](modules/04_r_rstudio.sh)
 Configura el repositorio oficial de CRAN para R y el gestor de paquetes paralelo `pak`. Instala RStudio Server y re-asigna sus puertos de comunicación para no generar conflictos en el servidor.
 
-### [05_mlflow.sh](file:///home/augusto/Desktop/enviroment-Creation/modules/05_mlflow.sh)
+### [05_mlflow.sh](modules/05_mlflow.sh)
 Configura e inicia un servidor local de MLflow con persistencia en SQLite y almacenamiento de artefactos local, exponiéndolo mediante un servicio de `systemd --user`.
 
-### [06_julia.sh](file:///home/augusto/Desktop/enviroment-Creation/modules/06_julia.sh)
+### [06_julia.sh](modules/06_julia.sh)
 Instala Julia de manera recomendada mediante `juliaup`, agrega soporte interactivo para Jupyter (IJulia) y descarga las librerías matemáticas y de análisis de datos más populares del lenguaje.
 
-### [07_docker_desktop.sh](file:///home/augusto/Desktop/enviroment-Creation/modules/07_docker_desktop.sh)
+### [07_docker_desktop.sh](modules/07_docker_desktop.sh)
 Instala Docker Engine oficial con permisos automáticos para el usuario actual. También instala software de uso diario como LibreOffice, Google Chrome, Brave Browser, DBeaver CE y Visual Studio Code (junto con sus extensiones clave para Python, R y Docker).
 
-### [08_audiomedia.sh](file:///home/augusto/Desktop/enviroment-Creation/modules/08_audiomedia.sh)
+### [08_audiomedia.sh](modules/08_audiomedia.sh)
 Configura las herramientas creativas en sus versiones más actuales utilizando el PPA oficial de **Ubuntu Studio Backports** y habilita soporte de audio de baja latencia asignando al usuario en el grupo de permisos de tiempo real `audio` (indispensable para PipeWire/JACK con Ardour y Audacity). Instala:
 - **Diseño Gráfico / Ilustración / Pintura**: GIMP, Krita, Inkscape, MyPaint.
 - **Modelado 3D / CAD / VFX**: Blender, Natron, LibreCAD.
