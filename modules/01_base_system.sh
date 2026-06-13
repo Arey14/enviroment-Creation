@@ -13,7 +13,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get update -qq
 sudo DEBIAN_FRONTEND=noninteractive apt-get --yes install \
   apt-transport-https ca-certificates gnupg software-properties-common
 
-sudo DEBIAN_FRONTEND=noninteractive dpkg --add-architecture i386
+
 sudo DEBIAN_FRONTEND=noninteractive apt-get --yes install build-essential
 
 # Default python3 will be used

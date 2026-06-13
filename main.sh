@@ -16,7 +16,7 @@ export MAKEFLAGS="-j$(nproc)"
 export UBUNTU_CODENAME=$(lsb_release -cs)
 
 mkdir -p "${STATE_DIR}"
-mkdir -p "${HOME}/log"
+
 
 # Global logging redirection
 exec > >(tee -i "${LOG_FILE}") 2>&1

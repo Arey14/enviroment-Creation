@@ -55,7 +55,7 @@ if ! systemctl is-active --quiet rstudio-server; then
   # Always use 'jammy' deb package as it installs fine in newer Ubuntu versions
   RSTUDIO_PACK="rstudio-server-2026.05.0-218-amd64.deb"
   wget -q "https://download2.rstudio.org/server/jammy/amd64/${RSTUDIO_PACK}"
-  sudo DEBIAN_FRONTEND=noninteractive gdebi -n "${RSTUDIO_PACK}"
+  sudo DEBIAN_FRONTEND=noninteractive apt-get install --yes ./"${RSTUDIO_PACK}"
   rm "${RSTUDIO_PACK}"
   
   sudo mkdir -p /etc/rstudio

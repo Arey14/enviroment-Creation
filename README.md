@@ -46,7 +46,7 @@ Para garantizar que la instalación se complete sin intervención del usuario en
 Instala dependencias esenciales del sistema de compilación (`build-essential`), bibliotecas de desarrollo criptográfico y geoespacial, el gestor de paquetes de Python ultrarrápido `uv`, y herramientas cotidianas (`tmux`, `git`, `htop`, `ffmpeg`).
 
 ### [02_sysstat_swap.sh](file:///home/augusto/Desktop/enviroment-Creation/modules/02_sysstat_swap.sh)
-Configura el demonio de recolección de estadísticas del sistema `sysstat` en intervalos de 5 minutos, calcula la RAM del equipo y activa un archivo Swap de tamaño dinámico (máximo 16GB) para evitar fallos por falta de memoria (Out-of-Memory).
+Configura el demonio de recolección de estadísticas del sistema `sysstat` en intervalos de 5 minutos para monitorizar el uso de recursos históricos.
 
 ### [03_python_jupyter.sh](file:///home/augusto/Desktop/enviroment-Creation/modules/03_python_jupyter.sh)
 Crea un entorno virtual (`.venv`) y utiliza `uv` para instalar suites de ciencia de datos, machine learning (TensorFlow, Keras, PyTorch/LightGBM, pandas) y utilidades de backend. Adicionalmente, instala e implementa JupyterLab como un servicio de sistema (`systemd --user`).
