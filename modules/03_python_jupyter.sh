@@ -21,7 +21,7 @@ source "${VENV_PATH}/bin/activate"
 uv pip install --upgrade pip setuptools wheel
 uv pip install pandas numpy scikit-learn statsmodels scipy matplotlib seaborn plotly \
   pyarrow fastparquet openpyxl tables duckdb duckdb-engine jupysql polars \
-  xgboost lightgbm optuna "tensorflow==2.16.1" "keras>=3.0.0" dask numba \
+  xgboost lightgbm optuna "tensorflow==2.16.1" "keras>=3.0.0" torch torchvision torchaudio dask numba \
   requests selenium scrapy flask fastapi "uvicorn[standard]" mlflow dvc \
   nbconvert nb_pdf_template "nbconvert[webpdf]" black flake8 ruff python-dotenv \
   kaggle zulip pika gdown evidently pygments oauthlib jupyterlab \
