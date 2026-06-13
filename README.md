@@ -20,7 +20,8 @@ La estructura de archivos está organizada de la siguiente manera:
     ├── 05_mlflow.sh         # Servidor y UI de MLflow como servicio de usuario
     ├── 06_julia.sh          # Entorno Juliaup, lenguaje Julia y paquetes básicos
     ├── 07_docker_desktop.sh # Docker Engine, herramientas de oficina y navegadores
-    └── 08_audiomedia.sh     # Suites de diseño gráfico, modelado 3D y edición de audio/video
+    ├── 08_audiomedia.sh     # Suites de diseño gráfico, modelado 3D y edición de audio/video
+    └── 09_ai_dev_tools.sh   # Publicación científica, agentes de IA (OpenCode, Antigravity IDE) y descargas
 ```
 
 ---
@@ -71,6 +72,13 @@ Configura las herramientas creativas en sus versiones más actuales utilizando e
 - **Edición de Video / Audio / Captura**: Kdenlive, Shotcut, Audacity, Ardour, OBS Studio, Handbrake.
 - **Publicación Editorial / Lectura**: Scribus, Calibre.
 - **Códecs**: `ubuntu-restricted-extras` con aceptación automática de EULA.
+
+### [09_ai_dev_tools.sh](modules/09_ai_dev_tools.sh)
+Instala y configura herramientas de productividad para Inteligencia Artificial y publicación técnica:
+- **Publicación científica**: Instala Quarto CLI (última versión de GitHub) para la redacción de informes técnicos y presentaciones.
+- **Agentes de IA**: Instala el CLI de OpenCode y OpenCode Desktop, y genera una plantilla de configuración global en `~/.config/opencode/opencode.jsonc` con soporte para OpenAI, Anthropic y GitHub Copilot.
+- **Entorno de Desarrollo**: Enlaza simbólicamente la instalación de Antigravity IDE a `/usr/local/bin` si se encuentra extraída en `/opt/antigravity-ide`.
+- **Utilidades de Medios**: Instala el binario actualizado de `yt-dlp` en `/usr/local/bin` y asegura la presencia de `ffmpeg` para procesamiento multimedia.
 
 ---
 

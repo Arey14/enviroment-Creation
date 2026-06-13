@@ -16,6 +16,7 @@ export MAKEFLAGS="-j$(nproc)"
 export UBUNTU_CODENAME=$(lsb_release -cs)
 
 mkdir -p "${STATE_DIR}"
+mkdir -p "${HOME}/Downloads/Compressed" "${HOME}/Downloads/Documents" "${HOME}/Downloads/Programs" "${HOME}/Downloads/Videos"
 
 
 # Global logging redirection
@@ -37,6 +38,7 @@ MODULES=(
   "06_julia.sh"
   "07_docker_desktop.sh"
   "08_audiomedia.sh"
+  "09_ai_dev_tools.sh"
 )
 
 bitacora "START Modular Installation (Ubuntu ${UBUNTU_CODENAME})"
